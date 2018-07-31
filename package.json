@@ -1,0 +1,25 @@
+{
+  "name": "static-site-mailer",
+  "version": "1.0.0",
+  "description": "A contact form mailer using Serverless for static sites",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "sls deploy",
+    "deploy-contact-mailer": "sls deploy function -f contactMailer",
+    "invoke": "sls invoke -f contactMailer",
+    "invoke-local": "sls invoke local -f contactMailer -p ./tests/data.json",
+    "logs": "sls logs -f contactMailer -t",
+    "serverless": "node_modules/.bin/serverless",
+    "sls": "node_modules/.bin/serverless",
+    "service-info": "sls info",
+  },
+  "author": "Batbayar <batbayar.sukhbaatar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.202.0",
+    "serverless": "^1.26.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  }
+}

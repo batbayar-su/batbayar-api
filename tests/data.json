@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "origin": "http://localhost:3000"
+  },
+  "body":
+    "{\"subject\": \"Receiver Test subject\",\"name\": \"Sender Name\",\"reply_to\": \"batbayar.sukhbaatar@grab.com\",\"message\": \"Sender message\"}"
+}
